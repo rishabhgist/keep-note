@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="search-box">
+        <input type="text" class="search" [(ngModel)] = "searchNote" ><button type="button" (click)="search()">Search</button>
+    </div>
+    <div class="notes">
+        <div class="card" *ngFor="let note of notes">
+            <h3>{{note.title}}</h3>
+            <p>{{note.body}}</p>
+        </div>
+    </div>
+</div>
