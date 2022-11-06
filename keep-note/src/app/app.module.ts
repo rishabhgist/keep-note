@@ -15,7 +15,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { SearchComponent } from './search/search.component';
-import { ReactiveFormsModule } from '@angular/forms';  
+import { ReactiveFormsModule } from '@angular/forms'; 
+import {MatCardModule} from '@angular/material/card';
+import { NoteViewComponent } from './note-view/note-view.component';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     DashboardComponent,
-    SearchComponent
+    SearchComponent,
+    NoteViewComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
