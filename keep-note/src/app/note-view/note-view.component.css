@@ -13,7 +13,7 @@
 
 mat-card{
     width: 250px;
-    height: 180px;
+    height: fit-content;
 }
 mat-card-title {
     margin: 15px 0 !important;
@@ -24,6 +24,7 @@ mat-card mat-card-content {
     margin-bottom: 15px !important;
 }
 .controls{
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
 }
