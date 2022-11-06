@@ -16,10 +16,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { SearchComponent } from './search/search.component';
 import { ReactiveFormsModule } from '@angular/forms'; 
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { NoteViewComponent } from './note-view/note-view.component';
 import { AddNoteComponent } from './add-note/add-note.component';
-
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,8 @@ import { AddNoteComponent } from './add-note/add-note.component';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
