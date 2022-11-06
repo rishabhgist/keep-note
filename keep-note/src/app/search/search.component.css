@@ -1,0 +1,14 @@
+#search {
+    width: 500px;
+    margin: auto;
+}
+.mat-form-field{
+    width: 500px;
+    margin: auto;
+}
+.icon {
+    margin-right: 10px;
+}
+.toolbar-button {
+    padding: 0;
+}

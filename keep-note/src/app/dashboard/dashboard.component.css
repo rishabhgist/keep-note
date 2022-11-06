@@ -3,13 +3,6 @@
     margin: auto;
     padding: 15px 0;
 }
-.search-box{
-    text-align: center;
-    border: 1px solid dodgerblue;
-    padding: 5px 20px;
-    width: fit-content;
-    margin: auto;
-}
 .notes{
     margin-top: 50px;
     display: grid;

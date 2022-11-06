@@ -14,14 +14,5 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  searchNote: string = '';
-  search() {
-       if (this.searchNote === '' || !this.searchNote)
-        this.notes = NOTES;
-      else {
-        this.notes = NOTES;
-        this.notes = this.notes.filter(note => note.title?.startsWith(this.searchNote.toLowerCase()));
-      }
-
-  }
+ 
 }
