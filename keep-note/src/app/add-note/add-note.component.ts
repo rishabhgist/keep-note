@@ -11,5 +11,5 @@ export class AddNoteComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }

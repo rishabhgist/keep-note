@@ -9,19 +9,5 @@ import { MatDialog } from '@angular/material/dialog';
 export class HeaderComponent {
 
   constructor(public dialog: MatDialog) {}
-  
-   openDialog() {
-    const dialogRef = this.dialog.open(AddDataDialog);
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
-  }
+  isAdd = false;
 }
-
-@Component({
-  selector: 'add-note',
-  templateUrl: '../add-note/add-note.component.html',
-})
-  
-export class AddDataDialog {}
