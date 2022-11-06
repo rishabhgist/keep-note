@@ -12,5 +12,9 @@ export class NoteViewComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  // value(v: any) {
+  //   console.log(v);
+  // } 
+  isControl = false;
+  id:number | undefined = 0;
 }

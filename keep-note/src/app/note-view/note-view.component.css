@@ -1,5 +1,5 @@
 .container {
-    width: 1000px;
+    width: 1200px;
     margin: auto;
     padding: 15px 0;
 }
@@ -11,7 +11,10 @@
     gap: 20px;
 }
 
-
+mat-card{
+    width: 250px;
+    height: 180px;
+}
 mat-card-title {
     margin: 15px 0 !important;
 }
@@ -19,4 +22,8 @@ mat-card-title {
 mat-card mat-card-content {
     font-size: 15px;
     margin-bottom: 15px !important;
+}
+.controls{
+    display: flex;
+    justify-content: space-evenly;
 }
