@@ -1,11 +1,12 @@
-form {
-    margin-top: 20px;
-    display: flex;
+mat-card{
+    width: 500px;
+    margin: auto;
+    margin-top: 150px;
 }
-input {
-    margin: 10px;
-    width: 150px;
+mat-card-content{
+    display: flex;
+    flex-direction: column;
 }
 button{
-    width: 80px;
+    width: 150px;
 }
