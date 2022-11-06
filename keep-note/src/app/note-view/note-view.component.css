@@ -1,0 +1,22 @@
+.container {
+    width: 1000px;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.notes {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+}
+
+
+mat-card-title {
+    margin: 15px 0 !important;
+}
+
+mat-card mat-card-content {
+    font-size: 15px;
+    margin-bottom: 15px !important;
+}
