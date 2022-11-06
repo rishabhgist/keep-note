@@ -18,6 +18,7 @@ import { SearchComponent } from './search/search.component';
 import { ReactiveFormsModule } from '@angular/forms'; 
 import {MatCardModule} from '@angular/material/card';
 import { NoteViewComponent } from './note-view/note-view.component';
+import { AddNoteComponent } from './add-note/add-note.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { NoteViewComponent } from './note-view/note-view.component';
     HeaderComponent,
     DashboardComponent,
     SearchComponent,
-    NoteViewComponent
+    NoteViewComponent,
+    AddNoteComponent
   ],
   imports: [
     BrowserModule,
