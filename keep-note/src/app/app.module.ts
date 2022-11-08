@@ -20,6 +20,11 @@ import { MatCardModule } from '@angular/material/card';
 import { NoteViewComponent } from './note-view/note-view.component';
 import { AddNoteComponent } from './add-note/add-note.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -45,6 +50,11 @@ import { MatDialogModule } from '@angular/material/dialog';
     ReactiveFormsModule,
     MatCardModule,
     MatDialogModule,
+    HttpClientModule,
+    MatExpansionModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent],

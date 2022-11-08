@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Note } from '../model/note';
-import { NOTES } from '../model/notes';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -8,11 +7,15 @@ import { NOTES } from '../model/notes';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  notes = NOTES;
 
   constructor() { }
 
   ngOnInit(): void {
   }
- 
+
+  isAdd = false; // Toggle Add
+
+  toggleAdd() {
+    this.isAdd = !this.isAdd;
+  }
 }

@@ -9,9 +9,4 @@ import { MatDialog } from '@angular/material/dialog';
 export class HeaderComponent {
 
   constructor(public dialog: MatDialog) {}
-  isAdd = false;
-
-  toggleAdd() {
-    this.isAdd = !this.isAdd;
-  }
 }

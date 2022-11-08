@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NOTES } from '../model/notes';
+import { Note } from '../model/note';
+import { NoteService } from '../services/note.service';
 
 @Component({
   selector: 'app-note-view',
@@ -7,14 +8,31 @@ import { NOTES } from '../model/notes';
   styleUrls: ['./note-view.component.css']
 })
 export class NoteViewComponent implements OnInit {
-  notes = NOTES;
-  constructor() { }
+
+  notes: Note [] =[];
+ 
+  constructor(private note:NoteService) { }
 
   ngOnInit(): void {
+    this.getAll()
   }
-  // value(v: any) {
-  //   console.log(v);
-  // } 
+  getData(data:any) {
+    this.notes = data;
+  }
+  getAll() {
+    this.note.getNotes().subscribe(value=>this.notes = value)
+  }
+  dateConvert(date: string | undefined) {
+    if (date != undefined)
+    {
+      let [dateStr, timeStr] = date.split('T');
+      let time = timeStr.replace(':000Z',' ')
+     // const [] = dateStr.split('-');
+      //let newDate = new Date(+year, +month - 1, +day);
+      return dateStr ;
+    }
+    return null;
+  }
   isControl = false;
   id:number | undefined = 0;
 }
